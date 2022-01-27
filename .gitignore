@@ -28,4 +28,3 @@ hs_err_pid*
 *.iml
 *.kotlin_module
 target
-/.allure/allure-2.8.1/
