@@ -1,4 +1,4 @@
-package pageObjects;
+package pageObjects.basePageObjects;
 
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;

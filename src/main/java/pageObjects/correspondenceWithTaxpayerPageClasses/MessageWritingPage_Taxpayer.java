@@ -1,4 +1,4 @@
-package pageObjects;
+package pageObjects.correspondenceWithTaxpayerPageClasses;
 
 import config.Config;
 import org.openqa.selenium.Keys;
@@ -10,9 +10,9 @@ import utils.TestUtils;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class MessageWritingPage {
+public class MessageWritingPage_Taxpayer {
     private WebDriver driver;
-    public MessageWritingPage(WebDriver driver){
+    public MessageWritingPage_Taxpayer(WebDriver driver){
         this.driver = driver;
     }
     @FindBy(xpath = "//input[starts-with(@id,'react-select-')]") private WebElement voenField;

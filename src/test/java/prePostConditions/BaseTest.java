@@ -5,8 +5,8 @@ import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import utils.TestUtils;
 import java.io.IOException;
 
@@ -14,7 +14,7 @@ public class BaseTest {
 
     public WebDriver driver;
 
-    @BeforeSuite
+    @BeforeClass
     public void setUp() throws IOException {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         //mention the below chrome option to solve timeout exception issue
@@ -25,7 +25,7 @@ public class BaseTest {
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
     }
-    @AfterSuite
+    @AfterClass
     public void tearDown(){
         TestUtils.sleep(5000);
         driver.quit();

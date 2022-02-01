@@ -15,18 +15,18 @@ public class Config {
         return getPropertyObject().getProperty("url");
     }
     public static String getPhoneSender() throws IOException {
-        return getPropertyObject().getProperty("loginPhoneSender");
+        return getPropertyObject().getProperty("loginPhoneCybernet");
     }
     public static String getIdSender() throws IOException {
-        return getPropertyObject().getProperty("loginIdSender");
+        return getPropertyObject().getProperty("loginIdCybernet");
     }
     public static String getPhoneReceiver() throws IOException {
-        return getPropertyObject().getProperty("loginPhoneReceiver");
+        return getPropertyObject().getProperty("loginPhoneSmartBytes");
     }
     public static String getIdReceiver() throws IOException {
-        return getPropertyObject().getProperty("loginIdReceiver");
+        return getPropertyObject().getProperty("loginIdSmartBytes");
     }
     public static String getVoenOfReceiver() throws IOException {
-        return getPropertyObject().getProperty("voenOfReceiver");
+        return getPropertyObject().getProperty("voenOfSmartBytes");
     }
 }

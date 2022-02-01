@@ -1,4 +1,4 @@
-package pageObjects;
+package pageObjects.correspondenceWithTaxpayerPageClasses;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,9 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import utils.TestUtils;
 
-public class MessagePage {
+public class MessagePage_Taxpayer {
     private WebDriver driver;
-    public MessagePage(WebDriver driver){
+    public MessagePage_Taxpayer(WebDriver driver){
         this.driver = driver;
     }
     @FindBy(xpath = "//div[@id='viewMessageRegNumber']/span") private WebElement getExpectedMessageId;

@@ -1,4 +1,4 @@
-package pageObjects;
+package pageObjects.basePageObjects;
 
 import config.Config;
 import org.openqa.selenium.WebDriver;
@@ -39,14 +39,14 @@ public class LoginPage {
     public void clickLoginButton() {
         loginButton.click();
     }
-    public void loginPageMethodsSender() throws IOException{
+    public void loginPageMethodsCybernet() throws IOException{
         clickAsanImzaTab();
         inputPhone(Config.getPhoneSender());
         inputId((Config.getIdSender()));
         setMockToggleButton();
         clickLoginButton();
     }
-    public void loginPageMethodsReciever() throws IOException{
+    public void loginPageMethodsSmartBytes() throws IOException{
         clickAsanImzaTab();
         inputPhone(Config.getPhoneReceiver());
         inputId(Config.getIdReceiver());
