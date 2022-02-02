@@ -1,4 +1,4 @@
-package correspondenceWithTaxAuthorityTestClasses;
+package correspondenceWithTaxAuthorityTestClasses.messagesToNationalRevenues;
 
 import assertion.Assertions;
 import org.openqa.selenium.support.PageFactory;
@@ -8,7 +8,7 @@ import pageObjects.basePageObjects.MainPage;
 import pageObjects.basePageObjects.ProfileSelectionPage;
 import pageObjects.correspondenceWithTaxAuthorityPageClasses.AllMessagesPage_TaxAuthority;
 import pageObjects.correspondenceWithTaxAuthorityPageClasses.MessagePage_TaxAuthority;
-import pageObjects.correspondenceWithTaxAuthorityPageClasses.MessageWritingPage_TaxAuthority;
+import pageObjects.correspondenceWithTaxAuthorityPageClasses.MessageWritingPage_TaxAuthorityNationalRevenues;
 import prePostConditions.BaseTest;
 
 import java.io.IOException;
@@ -17,7 +17,7 @@ import java.io.IOException;
  * All the test-method names explain the location(page) of executed test
  */
 
-public class SendComplaintToNationalRevenuesTestCase extends BaseTest {
+public class SendSentenceToNationalRevenuesTestCase extends BaseTest {
 
     @Test(priority = 1)
     public void loginPageTest() throws IOException {
@@ -41,8 +41,8 @@ public class SendComplaintToNationalRevenuesTestCase extends BaseTest {
     }
     @Test(priority = 5) //write new letter for receiver
     public void messageWritingPageTest(){
-        MessageWritingPage_TaxAuthority messageWritingPage_taxAuthority = PageFactory.initElements(driver, MessageWritingPage_TaxAuthority.class);
-        messageWritingPage_taxAuthority.complaintWritingPageMethods_TaxAuthority();
+        MessageWritingPage_TaxAuthorityNationalRevenues messageWritingPage_taxAuthorityNationalRevenues = PageFactory.initElements(driver, MessageWritingPage_TaxAuthorityNationalRevenues.class);
+        messageWritingPage_taxAuthorityNationalRevenues.sentenceWritingPageMethods_TaxAuthority();
     }
     @Test(priority = 6) //click cancel button in modal window
     public void allMessagesPageTest2(){
