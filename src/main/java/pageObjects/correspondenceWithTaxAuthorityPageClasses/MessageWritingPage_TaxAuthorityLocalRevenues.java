@@ -7,7 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.TestUtils;
-
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
@@ -72,7 +71,8 @@ public class MessageWritingPage_TaxAuthorityLocalRevenues {
         newMessageSubjectField.sendKeys("Subject field for test");
     }
     public void inputContent(){ //This method randomly generates ID for expected result in body when sending message. Then it will be used as an actual result in outbox message.
-        String uuid = UUID.randomUUID().toString();
+        TestUtils.sleep(1000);
+      String uuid = UUID.randomUUID().toString();
         System.out.println(uuid);
         Assertions.expected_SendLetterToNationalRevenuesTestCase = uuid;
         newMessageContentField.sendKeys(uuid);

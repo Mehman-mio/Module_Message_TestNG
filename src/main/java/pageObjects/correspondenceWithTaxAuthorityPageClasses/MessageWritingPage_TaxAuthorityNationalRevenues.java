@@ -71,6 +71,7 @@ public class MessageWritingPage_TaxAuthorityNationalRevenues {
         newMessageSubjectField.sendKeys("Subject field for test");
     }
     public void inputContent(){ //This method randomly generates ID for expected result in body when sending message. Then it will be used as an actual result in outbox message.
+        TestUtils.sleep(1000);
         String uuid = UUID.randomUUID().toString();
         System.out.println(uuid);
         Assertions.expected_SendLetterToNationalRevenuesTestCase = uuid;
