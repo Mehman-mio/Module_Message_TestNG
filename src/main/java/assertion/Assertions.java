@@ -17,4 +17,13 @@ public class Assertions {
     }
     //---------------------------------------------------------------------------------//
 
+    //-------------------- SendLetterToNationalRevenuesTestCase ------------------------//
+    public static String expected_SendLetterToLocalRevenuesTestCase;
+    public static String actual_SendLetterToLocalRevenuesTestCase;
+
+    public static void assert_SendLetterToLocalRevenuesTestCase(){
+        Assert.assertEquals(expected_SendLetterToLocalRevenuesTestCase, actual_SendLetterToLocalRevenuesTestCase, "Message cannot be sent");
+    }
+    //---------------------------------------------------------------------------------//
+
 }

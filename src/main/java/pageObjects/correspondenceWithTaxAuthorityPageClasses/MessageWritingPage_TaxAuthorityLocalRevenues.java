@@ -7,17 +7,18 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.TestUtils;
-import java.util.concurrent.TimeUnit;
-import java.util.UUID;
 
-public class MessageWritingPage_TaxAuthority {
+import java.util.UUID;
+import java.util.concurrent.TimeUnit;
+
+public class MessageWritingPage_TaxAuthorityLocalRevenues {
     private WebDriver driver;
 
-    public MessageWritingPage_TaxAuthority(WebDriver driver){
+    public MessageWritingPage_TaxAuthorityLocalRevenues(WebDriver driver){
         this.driver = driver;
     }
     @FindBy(id = "newMessageTaxAuthorityTo") private WebElement receiverField;
-    @FindBy(id = "newMessageTaxAuthority-13") private WebElement nationalRevenues;
+    @FindBy(id = "newMessageTaxAuthority-15") private WebElement localRevenues;
     @FindBy(id = "newMessageType") private WebElement typeOfMessageField;
     @FindBy(id = "messageType-leter") private WebElement typeLetter;
     @FindBy(id = "messageType-request") private WebElement typeRequest;
@@ -34,7 +35,7 @@ public class MessageWritingPage_TaxAuthority {
         driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
         receiverField.click();
         TestUtils.sleep(4000);
-        nationalRevenues.click();
+        localRevenues.click();
     }
     public void selectTypeOfMessageLetter() {
         WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -82,9 +83,8 @@ public class MessageWritingPage_TaxAuthority {
     public void inputPosition(){
         newMessagePositionField.sendKeys("Direktor");
     }
-    public void clickSendButton(){
-        newMessageSendButton.click();
-    }
+    public void clickSendButton(){ newMessageSendButton.click(); }
+
     public void letterWritingPageMethods_TaxAuthority(){
         selectReceiver();
         selectTypeOfMessageLetter();
