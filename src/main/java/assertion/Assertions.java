@@ -17,7 +17,7 @@ public class Assertions {
     }
     //---------------------------------------------------------------------------------//
 
-    //-------------------- SendLetterToNationalRevenuesTestCase ------------------------//
+    //-------------------- SendLetterToLocalRevenuesTestCase ------------------------//
     public static String expected_SendLetterToLocalRevenuesTestCase;
     public static String actual_SendLetterToLocalRevenuesTestCase;
 
