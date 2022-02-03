@@ -8,21 +8,12 @@ import org.testng.Assert;
 
 public class Assertions {
 
-    //-------------------- SendLetterToNationalRevenuesTestCase ------------------------//
-    public static String expected_SendLetterToNationalRevenuesTestCase;
-    public static String actual_SendLetterToNationalRevenuesTestCase;
+    //-------------------- SendMessageToTaxAuthorities ------------------------//
+    public static String expectedResult;
+    public static String actualResult;
 
-    public static void assert_SendLetterToNationalRevenuesTestCase(){
-        Assert.assertEquals(expected_SendLetterToNationalRevenuesTestCase, actual_SendLetterToNationalRevenuesTestCase, "Message cannot be sent");
-    }
-    //---------------------------------------------------------------------------------//
-
-    //-------------------- SendLetterToLocalRevenuesTestCase ------------------------//
-    public static String expected_SendLetterToLocalRevenuesTestCase;
-    public static String actual_SendLetterToLocalRevenuesTestCase;
-
-    public static void assert_SendLetterToLocalRevenuesTestCase(){
-        Assert.assertEquals(expected_SendLetterToLocalRevenuesTestCase, actual_SendLetterToLocalRevenuesTestCase, "Message cannot be sent");
+    public static void assert_SendMessageToTaxAuthorities(){
+        Assert.assertEquals(expectedResult, actualResult, "Message cannot be sent");
     }
     //---------------------------------------------------------------------------------//
 
@@ -34,4 +25,5 @@ public class Assertions {
         Assert.assertEquals(expected_SendMessageFromTaxpayerToTaxpayerTestCase, actual_SendMessageFromTaxpayerToTaxpayerTestCase, "Message cannot be sent");
     }
     //---------------------------------------------------------------------------------//
+
 }
