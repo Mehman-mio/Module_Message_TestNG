@@ -5,7 +5,7 @@
     <test verbose="2" preserve-order="true" name="C:/Users/mehman.rustamov/IdeaProjects/Module_Message_TestNG">
         <classes>
             <!--            ///////////////////////  TaxPayer - to Taxpayer  ///////////////////////-->
-            <class name="correspondenceWithTaxpayerTestClasses.SendAndReceiveMessageTestCase">
+            <class name="correspondenceWithTaxpayerTestClasses.SendMessageFromTaxpayerToTaxpayerTestCase">
                 <methods>
                     <include name="loginPageTest1"/>
                     <include name="profileSelectionPageTest1"/>

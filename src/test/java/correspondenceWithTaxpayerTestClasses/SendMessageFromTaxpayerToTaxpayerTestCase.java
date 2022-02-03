@@ -1,5 +1,6 @@
 package correspondenceWithTaxpayerTestClasses;
 
+import assertion.Assertions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import pageObjects.basePageObjects.LoginPage;
@@ -15,7 +16,7 @@ import java.io.IOException;
  * All the test-method names explain the location(page) of executed test
  */
 
-public class SendAndReceiveMessageTestCase extends BaseTest {
+public class SendMessageFromTaxpayerToTaxpayerTestCase extends BaseTest {
 
     @Test(priority = 1)
     public void loginPageTest1() throws IOException {
@@ -79,9 +80,6 @@ public class SendAndReceiveMessageTestCase extends BaseTest {
     }
     @Test(priority = 13) //assert actual with expected
     public void AssertExpectedWithActual(){
-        MessagePage_Taxpayer messagePageTaxpayer = PageFactory.initElements(driver, MessagePage_Taxpayer.class);
-        String expected = messagePageTaxpayer.setExpectedMessageId();
-        String actual = messagePageTaxpayer.setActualMessageId();
-        messagePageTaxpayer.assertValues(expected,actual);
+        Assertions.assert_SendMessageFromTaxpayerToTaxpayerTestCase();
     }
 }

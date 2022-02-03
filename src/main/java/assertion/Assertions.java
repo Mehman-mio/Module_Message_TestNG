@@ -26,4 +26,12 @@ public class Assertions {
     }
     //---------------------------------------------------------------------------------//
 
+    //-------------------- SendMessageFromTaxpayerToTaxpayerTestCase ------------------------//
+    public static String expected_SendMessageFromTaxpayerToTaxpayerTestCase;
+    public static String actual_SendMessageFromTaxpayerToTaxpayerTestCase;
+
+    public static void assert_SendMessageFromTaxpayerToTaxpayerTestCase(){
+        Assert.assertEquals(expected_SendMessageFromTaxpayerToTaxpayerTestCase, actual_SendMessageFromTaxpayerToTaxpayerTestCase, "Message cannot be sent");
+    }
+    //---------------------------------------------------------------------------------//
 }
