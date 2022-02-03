@@ -9,7 +9,6 @@ import pageObjects.basePageObjects.ProfileSelectionPage;
 import pageObjects.correspondenceWithTaxAuthorityPageClasses.AllMessagesPage_TaxAuthority;
 import pageObjects.correspondenceWithTaxAuthorityPageClasses.MessagePage_TaxAuthority;
 import pageObjects.correspondenceWithTaxAuthorityPageClasses.MessageWritingPage_TaxAuthorityLocalRevenues;
-import pageObjects.correspondenceWithTaxAuthorityPageClasses.MessageWritingPage_TaxAuthorityNationalRevenues;
 import prePostConditions.BaseTest;
 
 import java.io.IOException;
@@ -57,6 +56,6 @@ public class SendLetterToLocalRevenuesTestCase extends BaseTest {
     }
     @Test(priority = 8)
     public void AssertExpectedWithActual(){
-        Assertions.assert_SendLetterToLocalRevenuesTestCase();
+        Assertions.assert_SendMessageToTaxAuthorities();
     }
 }

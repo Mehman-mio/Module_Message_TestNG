@@ -13,7 +13,7 @@ public class MessagePage_TaxAuthority {
     @FindBy(id = "viewMessageContent") private WebElement getActualMessageId;
 
     public void setActualMessageId(){
-        Assertions.actual_SendLetterToNationalRevenuesTestCase = getActualMessageId.getText();
-        System.out.println(Assertions.actual_SendLetterToNationalRevenuesTestCase);
+        Assertions.actualResult = getActualMessageId.getText();
+        System.out.println(Assertions.actualResult);
     }
 }

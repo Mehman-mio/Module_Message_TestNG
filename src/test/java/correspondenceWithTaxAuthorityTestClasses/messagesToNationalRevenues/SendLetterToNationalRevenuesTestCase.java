@@ -55,6 +55,6 @@ public class SendLetterToNationalRevenuesTestCase extends BaseTest {
     }
     @Test(priority = 8)
     public void AssertExpectedWithActual(){
-        Assertions.assert_SendLetterToNationalRevenuesTestCase();
+        Assertions.assert_SendMessageToTaxAuthorities();
     }
 }

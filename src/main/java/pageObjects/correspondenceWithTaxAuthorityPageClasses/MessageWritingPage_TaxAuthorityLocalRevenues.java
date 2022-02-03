@@ -74,8 +74,8 @@ public class MessageWritingPage_TaxAuthorityLocalRevenues {
         String uuid = UUID.randomUUID().toString();
         newMessageContentField.sendKeys(uuid);
         TestUtils.sleep(1000);
-        Assertions.expected_SendLetterToLocalRevenuesTestCase = newMessageContentField.getText();
-        System.out.println(Assertions.expected_SendLetterToLocalRevenuesTestCase);
+        Assertions.expectedResult = newMessageContentField.getText();
+        System.out.println(Assertions.expectedResult);
         TestUtils.sleep(1000);
     }
     public void inputManagerName(){

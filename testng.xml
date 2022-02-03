@@ -144,6 +144,68 @@
                     <include name="AssertExpectedWithActual"/>
                 </methods>
             </class>
+
+            <!--            ///////////////////////  TaxAuthority - to Small Business  ///////////////////////-->
+            <class name="correspondenceWithTaxAuthorityTestClasses.messagesToSmallBusiness.SendLetterToSmallBusinessTestCase">
+                <methods>
+                    <include name="loginPageTest"/>
+                    <include name="profileSelectionPageTest"/>
+                    <include name="mainPageTest"/>
+                    <include name="allMessagesPageTest1"/>
+                    <include name="messageWritingPageTest"/>
+                    <include name="allMessagesPageTest2"/>
+                    <include name="messagePageTest_TaxAuthority"/>
+                    <include name="AssertExpectedWithActual"/>
+                </methods>
+            </class>
+            <class name="correspondenceWithTaxAuthorityTestClasses.messagesToSmallBusiness.SendRequestToSmallBusinessTestCase">
+                <methods>
+                    <include name="loginPageTest"/>
+                    <include name="profileSelectionPageTest"/>
+                    <include name="mainPageTest"/>
+                    <include name="allMessagesPageTest1"/>
+                    <include name="messageWritingPageTest"/>
+                    <include name="allMessagesPageTest2"/>
+                    <include name="messagePageTest_TaxAuthority"/>
+                    <include name="AssertExpectedWithActual"/>
+                </methods>
+            </class>
+            <class name="correspondenceWithTaxAuthorityTestClasses.messagesToSmallBusiness.SendComplaintToSmallBusinessTestCase">
+                <methods>
+                    <include name="loginPageTest"/>
+                    <include name="profileSelectionPageTest"/>
+                    <include name="mainPageTest"/>
+                    <include name="allMessagesPageTest1"/>
+                    <include name="messageWritingPageTest"/>
+                    <include name="allMessagesPageTest2"/>
+                    <include name="messagePageTest_TaxAuthority"/>
+                    <include name="AssertExpectedWithActual"/>
+                </methods>
+            </class>
+            <class name="correspondenceWithTaxAuthorityTestClasses.messagesToSmallBusiness.SendSentenceToSmallBusinessTestCase">
+                <methods>
+                    <include name="loginPageTest"/>
+                    <include name="profileSelectionPageTest"/>
+                    <include name="mainPageTest"/>
+                    <include name="allMessagesPageTest1"/>
+                    <include name="messageWritingPageTest"/>
+                    <include name="allMessagesPageTest2"/>
+                    <include name="messagePageTest_TaxAuthority"/>
+                    <include name="AssertExpectedWithActual"/>
+                </methods>
+            </class>
+            <class name="correspondenceWithTaxAuthorityTestClasses.messagesToSmallBusiness.SendThanksToSmallBusinessTestCase">
+                <methods>
+                    <include name="loginPageTest"/>
+                    <include name="profileSelectionPageTest"/>
+                    <include name="mainPageTest"/>
+                    <include name="allMessagesPageTest1"/>
+                    <include name="messageWritingPageTest"/>
+                    <include name="allMessagesPageTest2"/>
+                    <include name="messagePageTest_TaxAuthority"/>
+                    <include name="AssertExpectedWithActual"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>
