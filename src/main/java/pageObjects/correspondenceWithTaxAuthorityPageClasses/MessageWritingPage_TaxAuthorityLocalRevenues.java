@@ -73,10 +73,10 @@ public class MessageWritingPage_TaxAuthorityLocalRevenues {
     public void inputContent(){ //This method randomly generates ID for expected result in body when sending message. Then it will be used as an actual result in outbox message.
         String uuid = UUID.randomUUID().toString();
         newMessageContentField.sendKeys(uuid);
-        TestUtils.sleep(1000);
+        TestUtils.sleep(2000);
         Assertions.expectedResult = newMessageContentField.getText();
         System.out.println(Assertions.expectedResult);
-        TestUtils.sleep(1000);
+        TestUtils.sleep(2000);
     }
     public void inputManagerName(){
         newMessageManagerNameField.sendKeys("Huseynov Murad"); //temporarily
