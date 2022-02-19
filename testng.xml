@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/mehman.rustamov/IdeaProjects/Module_Message_TestNG">
+        <classes>
+            <!--            ///////////////////////  TaxPayer - to Taxpayer  ///////////////////////-->
+            <class name="correspondenceWithTaxpayerTestClasses.SendMessageFromTaxpayerToTaxpayerTestCase">
+                <methods>
+                    <include name="loginPageTest1"/>
+                    <include name="profileSelectionPageTest1"/>
+                    <include name="mainPageTest1"/>
+                    <include name="allMessagesPageTest1"/>
+                    <include name="messageWritingPageTest"/>
+                    <include name="allMessagesPageTest2"/>
+                    <include name="messagePageTest1"/>
+                    <include name="loginPageTest2"/>
+                    <include name="profileSelectionPageTest2"/>
+                    <include name="mainPageTest2"/>
+                    <include name="allMessagesPageTest3"/>
+                    <include name="messagePageTest2"/>
+                    <include name="AssertExpectedWithActual"/>
+                </methods>
+            </class>
+<!--            ///////////////////////  TaxAuthority - to National Revenues  ///////////////////////-->
+            <class name="correspondenceWithTaxAuthorityTestClasses.messagesToNationalRevenues.SendLetterToNationalRevenuesTestCase">
+                <methods>
+                    <include name="loginPageTest"/>
+                    <include name="profileSelectionPageTest"/>
+                    <include name="mainPageTest"/>
+                    <include name="allMessagesPageTest1"/>
+                    <include name="messageWritingPageTest"/>
+                    <include name="allMessagesPageTest2"/>
+                    <include name="messagePageTest_TaxAuthority"/>
+                    <include name="AssertExpectedWithActual"/>
+                </methods>
+            </class>
+            <class name="correspondenceWithTaxAuthorityTestClasses.messagesToNationalRevenues.SendRequestToNationalRevenuesTestCase">
+                <methods>
+                    <include name="loginPageTest"/>
+                    <include name="profileSelectionPageTest"/>
+                    <include name="mainPageTest"/>
+                    <include name="allMessagesPageTest1"/>
+                    <include name="messageWritingPageTest"/>
+                    <include name="allMessagesPageTest2"/>
+                    <include name="messagePageTest_TaxAuthority"/>
+                    <include name="AssertExpectedWithActual"/>
+                </methods>
+            </class>
+            <class name="correspondenceWithTaxAuthorityTestClasses.messagesToNationalRevenues.SendComplaintToNationalRevenuesTestCase">
+                <methods>
+                    <include name="loginPageTest"/>
+                    <include name="profileSelectionPageTest"/>
+                    <include name="mainPageTest"/>
+                    <include name="allMessagesPageTest1"/>
+                    <include name="messageWritingPageTest"/>
+                    <include name="allMessagesPageTest2"/>
+                    <include name="messagePageTest_TaxAuthority"/>
+                    <include name="AssertExpectedWithActual"/>
+                </methods>
+            </class>
+            <class name="correspondenceWithTaxAuthorityTestClasses.messagesToNationalRevenues.SendSentenceToNationalRevenuesTestCase">
+                <methods>
+                    <include name="loginPageTest"/>
+                    <include name="profileSelectionPageTest"/>
+                    <include name="mainPageTest"/>
+                    <include name="allMessagesPageTest1"/>
+                    <include name="messageWritingPageTest"/>
+                    <include name="allMessagesPageTest2"/>
+                    <include name="messagePageTest_TaxAuthority"/>
+                    <include name="AssertExpectedWithActual"/>
+                </methods>
+            </class>
+            <class name="correspondenceWithTaxAuthorityTestClasses.messagesToNationalRevenues.SendThanksToNationalRevenuesTestCase">
+                <methods>
+                    <include name="loginPageTest"/>
+                    <include name="profileSelectionPageTest"/>
+                    <include name="mainPageTest"/>
+                    <include name="allMessagesPageTest1"/>
+                    <include name="messageWritingPageTest"/>
+                    <include name="allMessagesPageTest2"/>
+                    <include name="messagePageTest_TaxAuthority"/>
+                    <include name="AssertExpectedWithActual"/>
+                </methods>
+            </class>
+            <!--            ///////////////////////  TaxAuthority - to Local Revenues  ///////////////////////-->
+            <class name="correspondenceWithTaxAuthorityTestClasses.messagesToLocalRevenues.SendLetterToLocalRevenuesTestCase">
+                <methods>
+                    <include name="loginPageTest"/>
+                    <include name="profileSelectionPageTest"/>
+                    <include name="mainPageTest"/>
+                    <include name="allMessagesPageTest1"/>
+                    <include name="messageWritingPageTest"/>
+                    <include name="allMessagesPageTest2"/>
+                    <include name="messagePageTest_TaxAuthority"/>
+                    <include name="AssertExpectedWithActual"/>
+                </methods>
+            </class>
+            <class name="correspondenceWithTaxAuthorityTestClasses.messagesToLocalRevenues.SendRequestToLocalRevenuesTestCase">
+                <methods>
+                    <include name="loginPageTest"/>
+                    <include name="profileSelectionPageTest"/>
+                    <include name="mainPageTest"/>
+                    <include name="allMessagesPageTest1"/>
+                    <include name="messageWritingPageTest"/>
+                    <include name="allMessagesPageTest2"/>
+                    <include name="messagePageTest_TaxAuthority"/>
+                    <include name="AssertExpectedWithActual"/>
+                </methods>
+            </class>
+            <class name="correspondenceWithTaxAuthorityTestClasses.messagesToLocalRevenues.SendComplaintToLocalRevenuesTestCase">
+                <methods>
+                    <include name="loginPageTest"/>
+                    <include name="profileSelectionPageTest"/>
+                    <include name="mainPageTest"/>
+                    <include name="allMessagesPageTest1"/>
+                    <include name="messageWritingPageTest"/>
+                    <include name="allMessagesPageTest2"/>
+                    <include name="messagePageTest_TaxAuthority"/>
+                    <include name="AssertExpectedWithActual"/>
+                </methods>
+            </class>
+            <class name="correspondenceWithTaxAuthorityTestClasses.messagesToLocalRevenues.SendSentenceToLocalRevenuesTestCase">
+                <methods>
+                    <include name="loginPageTest"/>
+                    <include name="profileSelectionPageTest"/>
+                    <include name="mainPageTest"/>
+                    <include name="allMessagesPageTest1"/>
+                    <include name="messageWritingPageTest"/>
+                    <include name="allMessagesPageTest2"/>
+                    <include name="messagePageTest_TaxAuthority"/>
+                    <include name="AssertExpectedWithActual"/>
+                </methods>
+            </class>
+            <class name="correspondenceWithTaxAuthorityTestClasses.messagesToLocalRevenues.SendThanksToLocalRevenuesTestCase">
+                <methods>
+                    <include name="loginPageTest"/>
+                    <include name="profileSelectionPageTest"/>
+                    <include name="mainPageTest"/>
+                    <include name="allMessagesPageTest1"/>
+                    <include name="messageWritingPageTest"/>
+                    <include name="allMessagesPageTest2"/>
+                    <include name="messagePageTest_TaxAuthority"/>
+                    <include name="AssertExpectedWithActual"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
